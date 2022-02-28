@@ -1,0 +1,49 @@
+.collect_main .collect_title {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+}
+.collect_main .collect_title .collect_tips {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 100%;
+  padding: 20rpx;
+}
+.collect_main .collect_title .active {
+  color: var(--themeColor);
+  border: 1px solid var(--themeColor);
+  padding: 20rpx;
+}
+.collect_main .collect_content .first_tab .goods_item {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2rpx solid #ccc;
+}
+.collect_main .collect_content .first_tab .goods_item .goods_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collect_main .collect_content .first_tab .goods_item .goods_img_wrap image {
+  width: 70%;
+}
+.collect_main .collect_content .first_tab .goods_item .goods_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collect_main .collect_content .first_tab .goods_item .goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect_main .collect_content .first_tab .goods_item .goods_info_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

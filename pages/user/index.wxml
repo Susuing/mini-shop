@@ -1,0 +1,73 @@
+
+
+<view class="user_info_wrap">
+  <view wx:if="{{userInfo.nickName}}" class="user_img_wrap">
+    <image class="user_bg" src="/icons/20211117192754.jpg"></image>
+    <view class="user_info">
+      <image class="user_icon" src="../../icons/20211117192754.jpg"></image>
+      <view class="user_name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else class="user_btn">
+    <navigator url="/pages/login/index">登录</navigator>
+  </view>
+</view>
+<view class="function_info">
+  <view class="tools_wrap">
+    <navigator class="tools_item">
+      <view class="choose_num">0</view>
+      <navigator>收藏的店铺</navigator>
+    </navigator>
+    <navigator class="tools_item" url="/pages/collect/index">
+      <view class="choose_num">{{collect_goods_num}}</view>
+      <navigator>收藏的商品</navigator>
+    </navigator>
+    <navigator class="tools_item">
+      <view class="choose_num">0</view>
+      <navigator>关注的商品</navigator>
+    </navigator>
+    <navigator class="tools_item">
+      <view class="choose_num">0</view>
+      <navigator>我的足迹</navigator>
+    </navigator>
+  </view>
+  <view class="my_order">
+    <view class="title">我的订单</view>
+    <view class="order_fun">
+      <navigator class="order_fun_item" url="/pages/order/index?type=1">
+        <view class="iconfont icon-dingdan"></view>
+        <view>全部订单</view>
+      </navigator>
+      <navigator class="order_fun_item" url="/pages/order/index?type=2">
+        <view class="iconfont icon-fukuantongzhi"></view>
+        <view>代付款</view>
+      </navigator>
+      <navigator class="order_fun_item" url="/pages/order/index?type=3">
+        <view class="iconfont icon-wuliukuaidi"></view>
+        <view>待收货</view>
+      </navigator>
+      <navigator class="order_fun_item" url="/pages/order/index?type=4">
+        <view class="iconfont icon-fukuan"></view>
+        <view>退款/退货</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="choose_wrap">
+    <view class="choose_item">
+      <view>收货地址管理</view>
+    </view>
+    <view class="choose_item">
+      <view>联系客服</view>
+      <!-- <view class="kefu">400-618-4000</view> -->
+    </view>
+    <navigator class="choose_item" url="/pages/feedback/index">
+      <view>意见反馈</view>
+    </navigator>
+    <view class="choose_item">
+      <view>关于我们</view>
+    </view>
+    <view class="choose_item">
+      <view>把应用推荐给其他人</view>
+    </view>
+  </view>
+</view>

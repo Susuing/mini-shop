@@ -1,0 +1,106 @@
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 50vw;
+  overflow: hidden;
+  background-color: var(--themeColor);
+}
+.user_info_wrap .user_img_wrap {
+  position: relative;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 60vw;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  color: #fff;
+  margin-top: 20rpx;
+}
+.user_info_wrap .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 15%;
+  color: #fff;
+  padding: 30rpx;
+  border: 1rpx solid #fff;
+}
+.function_info {
+  width: 95%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 26rpx;
+  color: #666;
+}
+.function_info .tools_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: -20px 0 20px 0;
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+}
+.function_info .tools_wrap .tools_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+.function_info .tools_wrap .tools_item .choose_num {
+  color: var(--themeColor);
+}
+.function_info .my_order {
+  width: 100%;
+  background-color: #fff;
+  padding: 20rpx 0;
+}
+.function_info .my_order .title {
+  margin-left: 20rpx ;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid gray;
+}
+.function_info .my_order .order_fun {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.function_info .my_order .order_fun .order_fun_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24rpx;
+}
+.function_info .my_order .order_fun .order_fun_item .iconfont {
+  color: var(--themeColor);
+  font-size: 24px;
+}
+.function_info .choose_wrap .choose_item {
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid gray;
+}
+.function_info .choose_wrap .choose_item:nth-child(1) {
+  margin: 10px 0;
+  border: none;
+}
+.function_info .choose_wrap .choose_item:nth-last-child(1) {
+  margin: 10px 0;
+  border: none;
+}
